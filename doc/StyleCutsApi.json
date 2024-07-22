@@ -1,0 +1,2642 @@
+{
+	"info": {
+		"_postman_id": "ac7345c9-8c41-47f1-9c57-a0a280af1525",
+		"name": "StyleCuts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26188586",
+		"_collection_link": "https://crimson-shadow-238769.postman.co/workspace/Team-Workspace~5b835757-0ed6-47db-8077-082df2b23964/collection/26188586-ac7345c9-8c41-47f1-9c57-a0a280af1525?action=share&source=collection_link&creator=26188586"
+	},
+	"item": [
+		{
+			"name": "Localhost",
+			"item": [
+				{
+					"name": "Account",
+					"item": [
+						{
+							"name": "GetUserProfile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAyOTAxMTYsImV4cCI6MTcyMjg4MjExNn0.ZThbngMxXBN3xy3xB7fCNqi2naK3dtbLw4yTu_Q52o0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/accounts/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"accounts",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateUserProfile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAyOTAxMTYsImV4cCI6MTcyMjg4MjExNn0.ZThbngMxXBN3xy3xB7fCNqi2naK3dtbLw4yTu_Q52o0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"ADMIN\",\r\n    \"email\": \"kiempham1245@gmail.com\",\r\n    \"phone\": \"0373926167\",\r\n    \"role\": \"Admin\",\r\n    \"avatar\":\"http://abc.com/bv.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/accounts/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"accounts",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetUsers",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/accounts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"accounts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetUserById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/accounts/6687673d902def62a746271e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"accounts",
+										"6687673d902def62a746271e"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateUser",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGVjNzIyZjAzYWZjYmY0YTExMjkwMCIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjE1NTc4OTksImV4cCI6MTcyNDE0OTg5OX0.iNod4KNNQ4R1wSMoAkCP6qKbn1U9TPJwU8NthM0KpjU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Customer\",\r\n    \"email\":\"customer@gmail.com\",\r\n    \"password\":\"Abcd@1234\",\r\n    \"phone\":\"0373926166\",\r\n    \"role\":\"Customer\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/accounts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"accounts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateUser",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"kiempham1245@gmail.com\",\r\n    \"name\": \"ADMIN\",\r\n    \"role\": \"Admin\",\r\n    \"phone\": \"0373926167\",\r\n    \"avatar\": \"https://ac.vn/a.jpg\",\r\n    \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/accounts/6687673d902def62a746271e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"accounts",
+										"6687673d902def62a746271e"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ChangePassword",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGZkNWE1NTM0OTUzNDc0ZmVmOWFiMiIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjE1NjkwNDUsImV4cCI6MTcyNDE2MTA0NX0.u3IyTtHR13ThrZ-YK33jlhOQ0e8TFea-Uh8WhKxJ8P0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"oldPassword\":\"Abcd@1234\",\r\n    \"newPassword\":\"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/accounts/change-password",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"accounts",
+										"change-password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteUser",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGVjNzIyZjAzYWZjYmY0YTExMjkwMCIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjE1NTc4OTksImV4cCI6MTcyNDE0OTg5OX0.iNod4KNNQ4R1wSMoAkCP6qKbn1U9TPJwU8NthM0KpjU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/accounts/669ce3af721565987705f984",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"accounts",
+										"669ce3af721565987705f984"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Appointment",
+					"item": [
+						{
+							"name": "GetAppointment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/appointments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"appointments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAppointmentById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/appointments/6687d5e705038606fe8725b6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"appointments",
+										"6687d5e705038606fe8725b6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAppointmentByAccountId",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/appointments/getByAccountId/6687d5e705038606fe8725b6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"appointments",
+										"getByAccountId",
+										"6687d5e705038606fe8725b6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateAppointment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"date\": \"2024-07-09\",\r\n    \"timeStart\": \"15:00:00\",\r\n    \"timeEnd\": \"15:30:00\",\r\n    \"totalPrice\": 50000,\r\n    \"salon\": \"6687c56b03498994f2ff530b\",\r\n    \"customer\": \"668814f05fb705879a2f0dc3\",\r\n    \"services\": [\r\n        \"6687d5b105038606fe8725af\"\r\n    ],\r\n    \"combos\": [],\r\n    \"staff\": \"668775e467fb2b85ca1f0fb5\",\r\n    \"paymentStatus\": \"Pending\",\r\n    \"paymentMethod\": \"Cash\",\r\n    \"paymentInfo\": {\r\n        \"name\": \"Pham Doan Kiem\",\r\n        \"email\": \"kiempham1245@gmail.com\",\r\n        \"phone\": \"0373926160\",\r\n        \"description\": \"\"\r\n    },\r\n    \"status\": \"Pending\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/appointments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"appointments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateAppointment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"date\": \"2024-07-05\",\r\n    \"timeStart\": \"15:00:00\",\r\n    \"timeEnd\": \"15:30:00\",\r\n    \"totalPrice\": 50000,\r\n    \"salon\":\"6687c56b03498994f2ff530b\",\r\n    \"customer\": \"668814f05fb705879a2f0dc3\",\r\n    \"services\": [\r\n        \"6687d5b105038606fe8725af\"\r\n    ],\r\n    \"combos\": [],\r\n    \"staff\": \"668775e467fb2b85ca1f0fb5\",\r\n    \"paymentStatus\": \"Pending\",\r\n    \"paymentMethod\": \"Cash\",\r\n    \"paymentInfo\": null,\r\n    \"status\": \"Pending\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/appointments/668815ba4fb1aaf541ccada8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"appointments",
+										"668815ba4fb1aaf541ccada8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteAppointment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/appointments/668a38a9fdbaea9b71c784a4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"appointments",
+										"668a38a9fdbaea9b71c784a4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "// {\r\n//     \"email\": \"khoinguyenh6@gmail.com\",\r\n//     \"password\": \"12345678\"\r\n// }\r\n{\r\n    \"email\": \"kiempham1245@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "RefreshToken",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzIwMjkwMDgwLCJleHAiOjE3MjA4OTQ4ODB9.C2zCmxj-oBqsN2sqE5k18Gr-SoyWE4EwNdlV4-TuoeM\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/refresh-token",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"refresh-token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Logout",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzIwMTUxNDMyLCJleHAiOjE3MjA3NTYyMzJ9.7c8Yl7WcZoVfPPZizs3sb7mtYjIx14ifEwwlgk-gYtk\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/logout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "// {\r\n//     \"name\":\"ADMIN\",\r\n//     \"email\":\"kiempham1245@gamil.com\",\r\n//     \"password\":\"Abcd@1234\",\r\n//     \"phone\":\"0373926166\",\r\n//     \"role\":\"Admin\"\r\n// }\r\n// {\r\n//     \"name\":\"Staff\",\r\n//     \"email\":\"staff@gmail.com\",\r\n//     \"password\":\"Abcd@1234\",\r\n//     \"phone\":\"0373926164\",\r\n//     \"role\":\"Staff\"\r\n// }\r\n{\r\n    \"name\":\"Customer\",\r\n    \"email\":\"customer@gmail.com\",\r\n    \"password\":\"Abcd@1234\",\r\n    \"phone\":\"0373926166\",\r\n    \"role\":\"Customer\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ForgotPassword",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"kiempham1245@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/forgot-password",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"forgot-password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ResetPassword",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"Abcd@1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJmb3JnZXQtcGFzc3dvcmQiLCJpYXQiOjE3MjAyOTAxNDUsImV4cCI6MTcyMDM3NjU0NX0.YIG4xiYDQwFMBmHlmSJ6UJGXnHkiIjv-FWya_x0b8BE",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"reset-password",
+										"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJmb3JnZXQtcGFzc3dvcmQiLCJpYXQiOjE3MjAyOTAxNDUsImV4cCI6MTcyMDM3NjU0NX0.YIG4xiYDQwFMBmHlmSJ6UJGXnHkiIjv-FWya_x0b8BE"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "noauth"
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Category",
+					"item": [
+						{
+							"name": "GetCategory",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetCategoryById",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/categories/6687c56b03498994f2ff530b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"categories",
+										"6687c56b03498994f2ff530b"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateCategory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"category\": \"Cắt tóc\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateCategory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"category\": \"Cắt tóc\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/categories/6687d4c0971f087139d391da",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"categories",
+										"6687d4c0971f087139d391da"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteCategory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/categories/6687d4c0971f087139d391da",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"categories",
+										"6687d4c0971f087139d391da"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Combo",
+					"item": [
+						{
+							"name": "GetCombo",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/combos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"combos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetComboById",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/combos/6687d5e705038606fe8725b6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"combos",
+										"6687d5e705038606fe8725b6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateCombo",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Combo Sinh viên\",\r\n    \"price\": 60000,\r\n    \"services\": [\r\n        \"6687d5b105038606fe8725af\",\r\n        \"6687d5cd05038606fe8725b2\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/combos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"combos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateCombo",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Combo Sinh viên\",\r\n    \"price\": 60000,\r\n    \"services\": [\r\n        \"6687d5b105038606fe8725af\",\r\n        \"6687d5cd05038606fe8725b2\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/combos/6687d5e705038606fe8725b6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"combos",
+										"6687d5e705038606fe8725b6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteCombo",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/combos/6687d5e705038606fe8725b6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"combos",
+										"6687d5e705038606fe8725b6"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Contact",
+					"item": [
+						{
+							"name": "GetContact",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/contacts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"contacts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetContactById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/contacts/6687d5e705038606fe8725b6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"contacts",
+										"6687d5e705038606fe8725b6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateContact",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"question\": \"Quán mở lúc mấy giờ?\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/contacts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"contacts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateContact",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"question\": \"Quán mở lúc mấy giờ?\",\r\n    \"answer\": \"Dạ quán mở lúc 7h30 sáng ạ.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/contacts/6687d9ee1ba427ebf3e1dbda",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"contacts",
+										"6687d9ee1ba427ebf3e1dbda"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteContact",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/contacts/6687d9245558d3ce90aaf8b9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"contacts",
+										"6687d9245558d3ce90aaf8b9"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Location",
+					"item": [
+						{
+							"name": "GetLocation",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/locations",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"locations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetLocationById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjY3ODcsImV4cCI6MTcyMDE2NzY4N30.KDDNcirftNOzegSXrYwJcYb8SHT4sh3G23jO5DclOLA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/locations/6687abe5b2f082bc340cfa4f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"locations",
+										"6687abe5b2f082bc340cfa4f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateLocation",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"number\": 27,\r\n    \"street\": \"Cộng hòa\",\r\n    \"ward\": \"12\",\r\n    \"district\": \"Tân Bình\",\r\n    \"city\": \"Hồ Chí Minh\",\r\n    \"map\": \"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1316.2802240255107!2d106.65696819199668!3d10.799817936246413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529372d346255%3A0xd699af95f297cc28!2zVmluY29tIFBsYXphIEPhu5luZyBIb8Og!5e0!3m2!1svi!2s!4v1720173802910!5m2!1svi!2s\",\r\n    \"description\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/locations",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"locations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateLocation",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"number\": 27,\r\n    \"street\": \"Cộng hòa\",\r\n    \"ward\": \"12\",\r\n    \"district\": \"Tân Bình\",\r\n    \"city\": \"Hồ Chí Minh\",\r\n    \"map\": \"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1316.2802240255107!2d106.65696819199668!3d10.799817936246413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529372d346255%3A0xd699af95f297cc28!2zVmluY29tIFBsYXphIEPhu5luZyBIb8Og!5e0!3m2!1svi!2s!4v1720173802910!5m2!1svi!2s\",\r\n    \"description\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/locations/6687c4c3bffd8c459a927149",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"locations",
+										"6687c4c3bffd8c459a927149"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteLocation",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/locations/6687c4c3bffd8c459a927149",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"locations",
+										"6687c4c3bffd8c459a927149"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Payment",
+					"item": [
+						{
+							"name": "GetPayment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjY3ODcsImV4cCI6MTcyMDE2NzY4N30.KDDNcirftNOzegSXrYwJcYb8SHT4sh3G23jO5DclOLA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/payments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"payments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetPaymentById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjY3ODcsImV4cCI6MTcyMDE2NzY4N30.KDDNcirftNOzegSXrYwJcYb8SHT4sh3G23jO5DclOLA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/payments/6687a494d7319957d787a12f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"payments",
+										"6687a494d7319957d787a12f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreatePayment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjUyNTIsImV4cCI6MTcyMDE2NjE1Mn0.M5pWWEps3ELUbCVZW60JbcTl6tHUVmr3bNJ1IeQ-6IU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Pham Doan Kiem\",\r\n    \"email\": \"kiempham1245@gmail.com\",\r\n    \"phone\": \"0373926160\",\r\n    \"description\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/payments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"payments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdatePayment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjY3ODcsImV4cCI6MTcyMDE2NzY4N30.KDDNcirftNOzegSXrYwJcYb8SHT4sh3G23jO5DclOLA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Pham Doan Kien\",\r\n    \"email\": \"kiempham1245@gmail.com\",\r\n    \"phone\": \"0373926160\",\r\n    \"description\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/payments/6687a494d7319957d787a12f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"payments",
+										"6687a494d7319957d787a12f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeletePayment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjY3ODcsImV4cCI6MTcyMDE2NzY4N30.KDDNcirftNOzegSXrYwJcYb8SHT4sh3G23jO5DclOLA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/payments/6687a494d7319957d787a12f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"payments",
+										"6687a494d7319957d787a12f"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Review",
+					"item": [
+						{
+							"name": "GetReview",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/reviews",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"reviews"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetReviewById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/reviews/6687de0e20350a3939eb83fc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"reviews",
+										"6687de0e20350a3939eb83fc"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateReview",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"rating\": 5,\r\n    \"comment\": \"Quá tuyệt với!\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/reviews",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"reviews"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateReview",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"rating\": 5,\r\n    \"comment\": \"Quá tuyệt với!\",\r\n    \"status\":\"pending\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/reviews/6687db831cafc8c0ca5a91b9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"reviews",
+										"6687db831cafc8c0ca5a91b9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteReview",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/reviews/6687dd751e92e40c82a30e20",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"reviews",
+										"6687dd751e92e40c82a30e20"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Salon",
+					"item": [
+						{
+							"name": "GetSalon",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/salons",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"salons"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetSalonById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjY3ODcsImV4cCI6MTcyMDE2NzY4N30.KDDNcirftNOzegSXrYwJcYb8SHT4sh3G23jO5DclOLA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/salons/6687c56b03498994f2ff530b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"salons",
+										"6687c56b03498994f2ff530b"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateSalon",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Salon Cộng Hòa\",\r\n    \"logo\": \"\",\r\n    \"description\": \"\",\r\n    \"location\": \"6687c55503498994f2ff5308\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/salons",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"salons"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateSalon",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Salon Cộng Hòa\",\r\n    \"logo\": \"\",\r\n    \"description\": \"\",\r\n    \"location\": \"6687c55503498994f2ff5308\",\r\n    \"reviews\": [\r\n        \"6687de0e20350a3939eb83fc\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/salons/6687c56b03498994f2ff530b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"salons",
+										"6687c56b03498994f2ff530b"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteSalon",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjY3ODcsImV4cCI6MTcyMDE2NzY4N30.KDDNcirftNOzegSXrYwJcYb8SHT4sh3G23jO5DclOLA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/salons/6687c56b03498994f2ff530b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"salons",
+										"6687c56b03498994f2ff530b"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Search",
+					"item": [
+						{
+							"name": "SearchInAllSalon",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/search?query=c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"search"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "c"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SearchInSalon",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/search/6687c56b03498994f2ff530b?query=c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"search",
+										"6687c56b03498994f2ff530b"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "c"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Service",
+					"item": [
+						{
+							"name": "GetService",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjY3ODcsImV4cCI6MTcyMDE2NzY4N30.KDDNcirftNOzegSXrYwJcYb8SHT4sh3G23jO5DclOLA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/services",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"services"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetServiceById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjY3ODcsImV4cCI6MTcyMDE2NzY4N30.KDDNcirftNOzegSXrYwJcYb8SHT4sh3G23jO5DclOLA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/services/6687abe5b2f082bc340cfa4f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"services",
+										"6687abe5b2f082bc340cfa4f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateService",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Cạo mặt\",\r\n    \"price\": 20000,\r\n    \"duration\": 10,\r\n    \"description\": \"\"\r\n}\r\n\r\n// {\r\n//     \"name\": \"Cắt tóc\",\r\n//     \"price\": 50000,\r\n//     \"duration\": 30,\r\n//     \"description\": \"\"\r\n// }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/services",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"services"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateService",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjY3ODcsImV4cCI6MTcyMDE2NzY4N30.KDDNcirftNOzegSXrYwJcYb8SHT4sh3G23jO5DclOLA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Cắt tóc\",\r\n    \"price\": 50000,\r\n    \"duration\": 30,\r\n    \"description\": \"OK\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/services/6687abe5b2f082bc340cfa4f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"services",
+										"6687abe5b2f082bc340cfa4f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteService",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/services/668be4a2f2397dcd2f57e47c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"services",
+										"668be4a2f2397dcd2f57e47c"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ShowTime",
+					"item": [
+						{
+							"name": "GetShowTime",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/show-times",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"show-times"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetShowTimeById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjY3ODcsImV4cCI6MTcyMDE2NzY4N30.KDDNcirftNOzegSXrYwJcYb8SHT4sh3G23jO5DclOLA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/show-times/6687b02be5457743e6359b1d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"show-times",
+										"6687b02be5457743e6359b1d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateShowTime",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"date\": \"2024-07-05\",\r\n    \"timeStart\": \"15:00:00\",\r\n    \"timeEnd\": \"15:30:00\",\r\n    \"staff\": \"668775e467fb2b85ca1f0fb5\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/show-times",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"show-times"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateShowTime",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"date\": \"2024-07-06\",\r\n    \"timeStart\": \"15:00:00\",\r\n    \"timeEnd\": \"15:30:00\",\r\n    \"staff\": \"668775e467fb2b85ca1f0fb5\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/show-times/6687b02be5457743e6359b1d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"show-times",
+										"6687b02be5457743e6359b1d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteShowTime",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODc2NzNkOTAyZGVmNjJhNzQ2MjcxZSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjAxNjgwOTYsImV4cCI6MTcyMjc2MDA5Nn0.8JReDAfLNmCWlUOOe7JeaBAWJPpMW2_JfGuvxbUGAy8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/show-times/6687b02be5457743e6359b1d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"show-times",
+										"6687b02be5457743e6359b1d"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Statistic",
+					"item": [
+						{
+							"name": "GetFinancialStats",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGVjNzIyZjAzYWZjYmY0YTExMjkwMCIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjE0NjE0NjcsImV4cCI6MTcyNDA1MzQ2N30.Kci8nQaeKr2f_8kowMNAGyeLA6k_EQJY4Og4GoF8gVE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/statistics/financial-stats?startDate=2023-07-03&endDate=2025-07-10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"statistics",
+										"financial-stats"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2023-07-03"
+										},
+										{
+											"key": "endDate",
+											"value": "2025-07-10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetRegistrationStats",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGVjNzIyZjAzYWZjYmY0YTExMjkwMCIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjE0NjE0NjcsImV4cCI6MTcyNDA1MzQ2N30.Kci8nQaeKr2f_8kowMNAGyeLA6k_EQJY4Og4GoF8gVE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/statistics/registration-stats?startDate=2023-07-09&endDate=2025-07-10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"statistics",
+										"registration-stats"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2023-07-09"
+										},
+										{
+											"key": "endDate",
+											"value": "2025-07-10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetMostSelectedService",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGVjNzIyZjAzYWZjYmY0YTExMjkwMCIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjE0NjE0NjcsImV4cCI6MTcyNDA1MzQ2N30.Kci8nQaeKr2f_8kowMNAGyeLA6k_EQJY4Og4GoF8gVE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/statistics/most-service?startDate=2023-07-09&endDate=2025-07-10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"statistics",
+										"most-service"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2023-07-09"
+										},
+										{
+											"key": "endDate",
+											"value": "2025-07-10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAverageRevenuePerAppointment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGVjNzIyZjAzYWZjYmY0YTExMjkwMCIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3MjE0NjE0NjcsImV4cCI6MTcyNDA1MzQ2N30.Kci8nQaeKr2f_8kowMNAGyeLA6k_EQJY4Og4GoF8gVE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/statistics/average-revenue-per-appointment?startDate=2023-07-09&endDate=2025-07-10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"statistics",
+										"average-revenue-per-appointment"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2023-07-09"
+										},
+										{
+											"key": "endDate",
+											"value": "2025-07-10"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Upload",
+					"item": [
+						{
+							"name": "Display",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/images/1720430550963.jpg",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"images",
+										"1720430550963.jpg"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Upload",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "postman-cloud:///1eefe641-8bdf-4130-b864-995ad9160836"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/images",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"images"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "postman-cloud:///1ef3c422-c90c-4d10-9a58-e178bb6fac46"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/images/1720430539586.jpg",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"images",
+										"1720430539586.jpg"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/images/1720430550963.jpg",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"images",
+										"1720430550963.jpg"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdkBnbWFpbC5jb20tT3B0aW9uYWxbU1ZdIiwiaWF0IjoxNzE5MjI2MDAyLCJleHAiOjE3MTkzMjY4MDJ9.GzDW5WsmSRC4Su51lA4yHHbuPgXb7wsAmMuHmPHKSYOQl_d8XBehTbOE6NNVUiQ6kOFlP0OXiRD8se3qyZExVQ",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
