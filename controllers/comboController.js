@@ -6,6 +6,7 @@ const { body, validationResult, param } = require('express-validator');
 // @route   POST /api/combos
 // @access  Private/Admin
 const createCombo = [
+    
     body('name').notEmpty().withMessage('Name is required'),
     body('price').notEmpty().withMessage('Price is required').isNumeric().withMessage('Price must be a number'),
     body('services').notEmpty().withMessage('Services are required').isArray({ min: 1 }).withMessage('At least one service is required'),

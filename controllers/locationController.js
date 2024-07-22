@@ -6,6 +6,7 @@ const { body, validationResult, param } = require('express-validator');
 // @route   GET /api/locations
 // @access  Public
 const getLocations = [
+    
     asyncHandler(async (req, res) => {
         const locations = await Location.find({});
         res.json(locations);

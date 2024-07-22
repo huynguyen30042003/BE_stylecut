@@ -14,6 +14,7 @@ router.route('/')
     .get(getLocations)
     .post(protect, admin, createLocation);
 
+    
 router.route('/:id')
     .get(getLocationById)
     .put(protect, admin, updateLocation)

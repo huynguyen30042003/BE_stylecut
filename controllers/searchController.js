@@ -6,6 +6,7 @@ const Salon = require('../models/Salon');
 // @route   GET /api/search
 // @access  Public
 const searchInAllSalon = [
+    
     // Validate and sanitize inputs
     query('query').notEmpty().withMessage('Query is required'),
     asyncHandler(async (req, res) => {

@@ -6,6 +6,7 @@ const { body, validationResult, param } = require('express-validator');
 // @route   POST /api/reviews
 // @access  Private
 const createReview = [
+    
     body('rating').isInt({ min: 1, max: 5 }).withMessage('Rating must be between 1 and 5'),
     body('comment').not().isEmpty().withMessage('Comment is required'),
     asyncHandler(async (req, res) => {

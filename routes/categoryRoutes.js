@@ -14,6 +14,7 @@ router.route('/')
     .post(protect, admin, createCategory)
     .get(getCategories);
 
+    
 router.route('/:id')
     .get(getCategoryById)
     .put(protect, admin, updateCategory)

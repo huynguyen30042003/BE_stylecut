@@ -14,6 +14,7 @@ router.route('/')
     .post(protect, admin, createShowTime)
     .get(getShowTimes);
 
+    
 router.route('/:id')
     .get(getShowTimeById)
     .put(protect, admin, updateShowTime)

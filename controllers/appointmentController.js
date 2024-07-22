@@ -8,6 +8,7 @@ const Combo = require("../models/Combo");
 // @route   POST /api/appointments
 // @access  Private
 const createAppointment = [
+  
   body("date").not().isEmpty().withMessage("Date is required"),
   body("timeStart").not().isEmpty().withMessage("Start time is required"),
   body("timeEnd").not().isEmpty().withMessage("End time is required"),

@@ -8,3 +8,4 @@ router.put('/:name', update);
 router.delete('/:name', deleteImage);
 
 module.exports = router;
+

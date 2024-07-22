@@ -7,6 +7,7 @@ const Review = require('../models/Review');
 // @route   POST /api/services
 // @access  Private/Admin
 const createService = [
+    
     body('name').not().isEmpty().withMessage('Name is required'),
     body('price').isNumeric().withMessage('Price must be a number'),
     body('duration').isNumeric().withMessage('Duration must be a number'),

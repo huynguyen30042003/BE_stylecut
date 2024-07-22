@@ -8,6 +8,7 @@ const { body, validationResult, param } = require('express-validator');
 // @route   POST /api/salons
 // @access  Private/Admin
 const createSalon = [
+    
     body('name').not().isEmpty().withMessage('Name is required'),
     body('location').isMongoId().withMessage('Location must be a valid ObjectId'),
     asyncHandler(async (req, res) => {
