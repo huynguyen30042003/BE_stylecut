@@ -14,7 +14,6 @@ router.route('/')
     .post(protect, admin, createSalon)
     .get(getSalons);
 
-    
 router.route('/:id')
     .get(getSalonById)
     .put(protect, admin, updateSalon)

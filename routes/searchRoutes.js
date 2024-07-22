@@ -6,4 +6,3 @@ router.get('/', searchInAllSalon);
 router.get('/:salonId', searchInSalon);
 
 module.exports = router;
-

@@ -7,7 +7,6 @@ const Account = require('../models/Account');
 // @route   GET /api/contacts
 // @access  Private/Admin
 const getContacts = [
-    
     asyncHandler(async (req, res) => {
         const contacts = await Contact.find({})
             .populate("customer", "_id name email phone avatar")

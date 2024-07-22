@@ -14,7 +14,6 @@ router.get(
   includeOf(["Admin", "Staff"]),
   getFinancialStats
 );
-
 router.get(
   "/registration-stats",
   protect,

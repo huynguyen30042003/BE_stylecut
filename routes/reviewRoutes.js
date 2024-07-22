@@ -12,7 +12,6 @@ const router = express.Router();
 
 router.route("/").post(protect, createReview).get(getReviews);
 
-
 router
   .route("/:id")
   .get(protect, getReviewById)

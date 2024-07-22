@@ -8,7 +8,6 @@ const moment = require('moment');
 // @route   GET /api/statistics/financial-stats
 // @access  Private/Admin|Staff
 const getFinancialStats = [
-    
     asyncHandler(async (req, res) => {
         const { startDate, endDate } = req.query;
         const startDateGte = startDate ? moment(startDate).startOf('day').toDate() : null;

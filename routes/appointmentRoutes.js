@@ -9,7 +9,6 @@ const {
   updateAppointmentStatus,
 } = require("../controllers/appointmentController");
 const {
-  
   protect,
   admin,
   staff,

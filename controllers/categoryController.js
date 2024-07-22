@@ -6,7 +6,6 @@ const { body, validationResult, param } = require("express-validator");
 // @route   POST /api/categories
 // @access  Private/Admin
 const createCategory = [
-  
   body("category").notEmpty().withMessage("Category is required"),
   asyncHandler(async (req, res) => {
     const errors = validationResult(req);

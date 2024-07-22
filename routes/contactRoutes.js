@@ -14,7 +14,6 @@ router.route('/')
     .get(protect, admin, getContacts)
     .post(protect, createContact);
 
-    
 router.route('/:id')
     .get(protect, admin, getContactById)
     .put(protect, admin, updateContact)

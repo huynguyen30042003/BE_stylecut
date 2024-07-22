@@ -10,7 +10,6 @@ const jwt = require("jsonwebtoken");
 // @route   POST /api/auth/register
 // @access  Public
 const registerUser = [
-  
   body("name").trim().not().isEmpty().withMessage("Name is required"),
   body("email").trim().isEmail().withMessage("Please enter a valid email"),
   body("password")

@@ -6,7 +6,6 @@ const { body, validationResult, param } = require('express-validator');
 // @route   POST /api/payment
 // @access  Public
 const createPayment = [
-    
     body('name').not().isEmpty().withMessage('Name is required'),
     body('email').isEmail().withMessage('Please enter a valid email'),
     body('phone').optional().isMobilePhone('any').withMessage('Please enter a valid phone number'),

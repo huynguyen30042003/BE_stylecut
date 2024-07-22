@@ -13,4 +13,3 @@ router.route('/:id')
     .delete(protect, admin, deletePayment);
 
 module.exports = router;
-

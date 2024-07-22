@@ -6,7 +6,6 @@ const bcrypt = require("bcryptjs");
 // @route   GET /api/accounts/profile
 // @access  Private
 const getUserProfile = [
-  
   asyncHandler(async (req, res) => {
     const user = await Account.findById(req.user._id).select(
       "_id name email phone avatar role"

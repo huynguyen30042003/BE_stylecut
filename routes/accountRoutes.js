@@ -6,7 +6,6 @@ const {
   includeOf,
 } = require("../middlewares/authMiddleware");
 const {
-  
   getUserProfile,
   updateUserProfile,
   getUsers,

@@ -6,7 +6,6 @@ const { body, validationResult, param } = require("express-validator");
 // @route   POST /api/showtimes
 // @access  Private/Admin
 const createShowTime = [
-  
   body("date").isDate().withMessage("Date must be a valid date"),
   body("timeStart").notEmpty().withMessage("Start time is required"),
   body("timeEnd").notEmpty().withMessage("End time is required"),
