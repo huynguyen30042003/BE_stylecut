@@ -12,6 +12,8 @@ const {
   deleteUser,
   getUserById,
   updateUser,
+  createUser,
+  changePassword,
 } = require("../controllers/accountController");
 
 const router = express.Router();
@@ -20,9 +22,11 @@ router
   .route("/profile")
   .get(protect, getUserProfile)
   .put(protect, updateUserProfile);
-
-router.route("/").get(protect, includeOf(["Admin", "Staff"]), getUsers);
-
+router.route("/change-password").put(protect, changePassword);
+router
+  .route("/")
+  .get(protect, includeOf(["Admin", "Staff"]), getUsers)
+  .post(protect, admin, createUser);
 router
   .route("/:id")
   .get(protect, includeOf(["Admin", "Staff"]), getUserById)
