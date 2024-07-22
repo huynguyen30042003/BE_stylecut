@@ -29,7 +29,7 @@ const createReview = [
 
 // @desc    Get all reviews
 // @route   GET /api/reviews
-// @access  Private/Admin
+// @access  Public
 const getReviews = [
     asyncHandler(async (req, res) => {
         const reviews = await Review.find({}).populate("customer", "_id name email phone avatar");
@@ -39,7 +39,7 @@ const getReviews = [
 
 // @desc    Get review by id
 // @route   GET /api/reviews/:id
-// @access  Private/Admin
+// @access  Private
 const getReviewById = [
     param('id').isMongoId().withMessage('Invalid Review ID'),
     asyncHandler(async (req, res) => {
@@ -58,7 +58,7 @@ const getReviewById = [
 
 // @desc    Update a review
 // @route   PUT /api/reviews/:id
-// @access  Private/Admin
+// @access  Private
 const updateReview = [
     param('id').isMongoId().withMessage('Invalid Review ID'),
     body('rating').isInt({ min: 1, max: 5 }).withMessage('Rating must be between 1 and 5'),
@@ -88,7 +88,7 @@ const updateReview = [
 
 // @desc    Delete a review
 // @route   DELETE /api/reviews/:id
-// @access  Private/Admin
+// @access  Private
 const deleteReview = [
     param('id').isMongoId().withMessage('Invalid Review ID'),
     asyncHandler(async (req, res) => {
